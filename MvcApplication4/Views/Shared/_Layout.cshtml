@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Говядко Илья</title>
+    <style>
+        body {
+            background: #FA8072;
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <FONT Size="5">
+            @Html.ActionLink("Главная", "Index", "Home")   
+            @Html.ActionLink("История", "Story", "History")
+            @Html.ActionLink("Любимые Фильмы", "Kino", "Films")
+            @RenderBody()
+        </FONT>
+    </div>
+</body>
+</html>

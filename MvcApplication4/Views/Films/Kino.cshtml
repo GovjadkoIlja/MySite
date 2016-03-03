@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Kino</title>
+</head>
+<body>
+    <div>
+        <ul>
+            @foreach (var mass in Model)
+            {
+                <li>
+                    <a href="@mass.Ssilka" title='Ссылка "Кинопоиск"'>@mass.Name</a> <br> 
+                    Жанр: @mass.Genre <br>
+                    Главные актеры: @mass.Actors <br />
+                </li>
+            }
+        </ul>
+    </div>
+</body>
+</html>
